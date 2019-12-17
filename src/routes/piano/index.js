@@ -7,20 +7,73 @@ export default class Piano extends Component {
 	};
 
 
-	// Note: `user` comes from the URL, courtesy of our router
+	renderPiano=()=>{
+		
+		return(
+			<div class='table-responsive'>
+				<table class='table-bordered mt-3'>
+					<tr>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						
+					</tr>
+					<tr>
+					<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+						<td class={style.tut}></td>
+					</tr>
+				</table>
+			</div>
+		)
+	}
+	
 	render() {
 		return (
-			<div class={style.profile}>
-				<h1>Profile: {instrument}</h1>
-				<p>This is the user profile for a user named { instrument }.</p>
-
-				<div>Current time: {new Date(time).toLocaleString()}</div>
-
-				<p>
-					<button onClick={this.increment}>Click Me</button>
-					{' '}
-					Clicked {this.state.count} times.
-				</p>
+			<div class={style.profile+" container"}>
+				{this.renderPiano()}
 			</div>
 		);
 	}
