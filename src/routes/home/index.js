@@ -33,7 +33,7 @@ export default class Home extends Component {
 									
 								</div>
 							</div>
-							<div class='col-sm-6 col-md-4 mt-0 mt-sm-3 mt-md-0'>
+							{/* <div class='col-sm-6 col-md-4 mt-0 mt-sm-3 mt-md-0'>
 							<div class='card shadow-sm'>
 							<Link href='/drum'>
 							<div class={'card-img-top text-center '+style.gede}>
@@ -41,7 +41,7 @@ export default class Home extends Component {
 									</div>
 									</Link>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

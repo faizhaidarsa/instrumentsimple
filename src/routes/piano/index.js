@@ -11,59 +11,67 @@ export default class Piano extends Component {
 		
 		return(
 			<div class='table-responsive'>
-				<table class='table-bordered mt-3'>
+				<table class='table-responsive mt-3' style={{border:'1px solid'}}>
 					<tr>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class='border-bottom-0'>
+						<td colSpan='3' class={style.tut}></td>
+						
+						<td colSpan='2' class={style.tut+' bg-dark'}></td>
+						<td colSpan='2' class={style.tut}></td>
+						
+						<td colSpan='2' class={style.tut+' bg-dark'}></td>
+						<td colSpan='3' class={style.tut}></td>
+						
+						<td colSpan='3' class={style.tut}></td>
+						
+						<td colSpan='2' class={style.tut+' bg-dark'}></td>
+						<td colSpan='2' class={style.tut}></td>
+						<td colSpan='2' class={style.tut+' bg-dark'}></td>
+						<td colSpan='2' class={style.tut}></td>
+						<td colSpan='2' class={style.tut+' bg-dark'}></td>
+						<td colSpan='3' class={style.tut}></td>
 						
 					</tr>
-					<tr>
-					<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
-						<td class={style.tut}></td>
+					<tr class='border-top-0'>
+					
+						<td colSpan='4' class={style.tut}></td>
+						<td colSpan='4' class={style.tut}></td>
+						<td colSpan='4' class={style.tut}></td>
+						<td colSpan='4' class={style.tut}></td>
+						<td colSpan='4' class={style.tut}></td>
+						<td colSpan='4' class={style.tut}></td>
+						<td colSpan='4' class={style.tut}></td>
+						
+						
 					</tr>
 				</table>
 			</div>
