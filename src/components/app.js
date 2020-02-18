@@ -3,12 +3,15 @@ import { Router } from 'preact-router';
 import 'bootstrap/dist/css/bootstrap.min.css'
 // The store:
 import createStore from 'unistore'
+import devtools    from 'unistore/devtools'
 
 // Preact integration
 import { Provider, connect } from 'unistore/preact'
 
-let store = createStore({
-	chord:[
+
+
+let initial={
+	guitarChord:[
 		{
 			name:'C',
 			position:[
@@ -132,8 +135,9 @@ let store = createStore({
 		}
 		
 	],
-	selected:null
-})
+	selectedChord:null
+} 
+let store =  process.env.NODE_ENV === 'production' ?  createStore(initial) : devtools(createStore(initial));
 
 import Header from './header';
 
@@ -156,19 +160,21 @@ export default class App extends Component {
 
 	render() {
 		return (
+			<Provider store={store}>
 			<div id="app">
-				
+				 
 				<Header />
 				<Router onChange={this.handleRoute}>
-					
+				
 					<Home path="/"/>
 					<Guitar path="/guitar" instrument="Guitar"/>
 					<Piano path="/piano" instrument="Piano"/>
 					<Drum path="/drum" instrument="Drum"/>
-					
-				</Router>
 				
+				</Router>
+			
 			</div>
+			</Provider>
 		);
 	}
 }

@@ -2,7 +2,18 @@ import { h,Component,Fragment } from 'preact';
 import style from './style';
 import {Provider,connect } from 'unistore/preact'
 
+let actions = store => ({
+	// for count
+	setSelectedChord(state) {
+	  return { selectedChord: state};
+	},
+	
+  });
+
 export default class Guitar extends Component {
+	
+	
+	
 	state = {
 		chord:[
 			{
